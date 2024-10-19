@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial - Principios y Paradigmas</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+
+        #hero h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            #hero h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inteligencia Artificial</h1>
+        <nav>
+            <ul>
+                <li><a href="#principios">Principios y Metodología</a></li>
+                <li><a href="#paradigmas">Paradigmas de la IA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="ia-hero.jpg" alt="Inteligencia Artificial" class="hero-img">
+        <h2>Explorando el Futuro de la Inteligencia Artificial</h2>
+    </section>
+
+    <!-- Section Principios y Metodología -->
+    <section id="principios">
+        <h2>2.1 Principios y Metodología de la Inteligencia Artificial</h2>
+        <p>La inteligencia artificial (IA) es una disciplina que abarca la creación de sistemas que imitan capacidades cognitivas humanas, como el aprendizaje, la resolución de problemas, y la toma de decisiones. Sus metodologías abarcan diversas técnicas, entre ellas:</p>
+        <ul>
+            <li><strong>Aprendizaje automático (Machine Learning):</strong> Este principio clave de la IA permite que las máquinas aprendan de los datos. Los algoritmos de aprendizaje automático identifican patrones en grandes cantidades de datos, lo que permite a los sistemas mejorar con el tiempo. Existen diversos tipos, como el aprendizaje supervisado, no supervisado y por refuerzo.</li>
+            <li><strong>Aprendizaje profundo (Deep Learning):</strong> Es una rama del aprendizaje automático que utiliza redes neuronales profundas, las cuales están inspiradas en la estructura del cerebro humano. Estas redes permiten a los sistemas de IA procesar grandes volúmenes de datos, incluyendo imágenes, textos y sonidos.</li>
+            <li><strong>Procesamiento del lenguaje natural (NLP):</strong> La IA también permite que las máquinas comprendan y generen lenguaje humano. Los modelos de NLP, como GPT y BERT, son ejemplos que demuestran la capacidad de la IA para interactuar de manera coherente y contextualmente precisa con los humanos.</li>
+            <li><strong>Robótica:</strong> Es una aplicación fundamental de la IA, donde los robots son programados para realizar tareas físicas. La robótica autónoma integra algoritmos de percepción, planificación y control, lo que permite a los robots tomar decisiones basadas en su entorno.</li>
+            <li><strong>Optimización:</strong> La IA también utiliza algoritmos de optimización para encontrar la mejor solución posible a problemas complejos. Estos algoritmos pueden resolver problemas que involucran la búsqueda de rutas óptimas, asignación de recursos y planificación eficiente.</li>
+        </ul>
+        <p>Estas metodologías están en constante evolución, impulsadas por el crecimiento exponencial de los datos y la mejora en la capacidad computacional, permitiendo así avances significativos en la capacidad de los sistemas de IA.</p>
+        <img src="ia-metodologia.jpg" alt="Metodología de IA" class="image">
+    </section>
+
+    <!-- Section Paradigmas -->
+    <section id="paradigmas">
+        <h2>2.2 Paradigmas de la Inteligencia Artificial</h2>
+        <p>Los paradigmas de la inteligencia artificial son diferentes enfoques para abordar la creación de sistemas inteligentes. A lo largo de los años, se han desarrollado varios paradigmas clave que han influido en el progreso de la IA:</p>
+        <ul>
+            <li><strong>Paradigma simbólico:</strong> Este enfoque se basa en la manipulación de símbolos y reglas lógicas para representar el conocimiento. Es el paradigma tradicional que utiliza la lógica formal y los sistemas expertos. Fue popular en las primeras etapas de la IA y es eficaz para resolver problemas estructurados que pueden describirse mediante reglas claras.</li>
+            <li><strong>Paradigma conexionista:</strong> Este enfoque está inspirado en la forma en que funciona el cerebro humano, utilizando redes neuronales artificiales para aprender y procesar información. Las redes neuronales son un conjunto interconectado de nodos (neuronas artificiales) que pueden ajustar sus conexiones a través del aprendizaje. Este paradigma es fundamental en el aprendizaje profundo, que ha revolucionado campos como el reconocimiento de imágenes, el procesamiento del lenguaje natural y los videojuegos.</li>
+            <li><strong>Paradigma evolutivo:</strong> Inspirado en la teoría de la evolución de Darwin, este enfoque utiliza algoritmos genéticos y otras técnicas evolutivas para optimizar soluciones a problemas complejos. Los sistemas evolucionan a través de un proceso de selección natural, donde las mejores soluciones sobreviven y se combinan para crear nuevas generaciones de soluciones aún más efectivas.</li>
+            <li><strong>Paradigma bayesiano:</strong> Este paradigma se basa en la teoría de la probabilidad y utiliza inferencias estadísticas para tomar decisiones y aprender de los datos. Los modelos bayesianos permiten manejar incertidumbres y actualizar creencias a medida que se obtiene nueva información. Este enfoque es utilizado en sistemas de recomendación, diagnóstico médico y otras aplicaciones donde la probabilidad juega un papel clave.</li>
+        </ul>
+        <p>Estos paradigmas no son excluyentes, y a menudo se combinan para crear sistemas de IA más robustos y eficientes. El futuro de la IA probablemente verá la integración de múltiples paradigmas, aprovechando lo mejor de cada enfoque para abordar problemas cada vez más complejos.</p>
+        <img src="ia-paradigmas.jpg" alt="Paradigmas de IA" class="image">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Página Informativa de IA</p>
+    </footer>
+</body>
+</html>
